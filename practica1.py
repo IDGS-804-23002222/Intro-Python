@@ -1,10 +1,16 @@
-#operacion de multiplicacion de a x b utilizando sumas
+#operacion de multiplicacion de a x b utilizando sumas 
+# salida=3+3+3+3=12
+
 a=3
 b=4
+
+resultado=0
+contador=0
 cadena=''
 
-while b<=4:
+while contador<b:
     cadena=cadena+str(a)+'+'
-    
-    
-# salida=3+3+3+3=12
+    resultado=resultado+a
+    contador=contador+1
+print(cadena)
+print("El resultado de la operación es: ", resultado)

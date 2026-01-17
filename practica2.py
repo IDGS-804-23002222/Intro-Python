@@ -3,34 +3,48 @@ crear un programa que permita realizar las operaciones basicas +,-,*,/
 utilizando funciones para cada operacion y un menu principal para desplegar y elegir que operacion 
 realizaremos
 '''
-
-num1=int(input("ingresa el primer número: "))
-num2=input("ingresa el segundo número: ")
-suma=num1+int(num2)
 def suma():
+    num1=float(input("Ingresa el primer número: "))
+    num2=float(input("Ingresa el segundo número: "))
+    print("Resultado: ", num1 + num2)
     
 def resta():
-    num1=int(input('Ingresa el primer numero: '))
-    num2=int(input())
+    num1=float(input("Ingresa el primer número: "))
+    num2=float(input("Ingresa el segundo número: "))
+    print("Resultado: ", num1 - num2)
     
 def multiplicacion():
+    num1=float(input("Ingresa el primer número: "))
+    num2=float(input("Ingresa el segundo número: "))
+    print("Resultado: ", num1 * num2)
     
-def division(:)
-    
+def division():
+    num1=float(input("Ingresa el primer número: "))
+    num2=float(input("Ingresa el segundo número: "))
+    if num2!=0:
+        print("Resultado: ", num1/num2)
+    else:
+        print("Error: no se puede dividir entre cero")
+        
 def main():
-    op=0
     print('Selecciona una opcion para hacer la operacion')
     print('1. Suma')
     print('2. Resta')
     print('3. Multiplicacion')
     print('4. Division')
+    
+    op=int(input("Opción: "))
+    
     if op==1:
         suma()
-    if op==2:
+    elif op==2:
         resta()
-    if op==3:
+    elif op==3:
         multiplicacion()
-    if op==4:
+    elif op==4:
         division()
+    else:
+        print("Opción no válida, selecciona una opción válida")
+
 if __name__ == "__main__":
     main()
